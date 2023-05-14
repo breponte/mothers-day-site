@@ -32,8 +32,8 @@ footer > h1 {
 
 footer > h2 {
   font-size: 25pt;
-  position: relative;
-  left: 50%;
+  text-align: right;
+  margin-right: 40%;
 }
 
 body {
@@ -53,6 +53,8 @@ body {
   width: 1.875in;
   height: 2.625in;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  position: relative;
+  z-index: 9999;
 }
 
 /* This container is needed to position the front and back side */

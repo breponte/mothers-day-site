@@ -14,10 +14,17 @@ function init() {
 }
 
 /*
- * Create a background card with random rotation and position
+ * TODO Create a background card with random rotation and position
  */
 function createCard() {
     const card = document.createElement('img');
     const randomFace = null;
     card.setAttribute('src', randomFace);
+}
+
+/*
+ * TODO Create a flower that blooms scroll
+ */
+function createFlower() {
+    
 }
