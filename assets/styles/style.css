@@ -28,6 +28,16 @@ main {
   height: 100%;
 }
 
+.flower {
+  position: absolute;
+  z-index: 1000;
+  transition: transform 0.8s ease-in-out;
+}
+
+.flower:hover {
+  transform: rotate(180deg) scale(0.35) !important;
+}
+
 footer {
   font-family: myFont;
   color: rgb(255, 50, 50);

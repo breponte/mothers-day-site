@@ -11,6 +11,10 @@ function init() {
     for (let i = 0; i < 52; i++) {
         createCard();
     }
+
+    for (let i = 0; i < 20; i++) {
+        createFlower(i);
+    }
 }
 
 /*
@@ -40,6 +44,21 @@ function createCard() {
 /*
  * TODO Create a flower that blooms scroll
  */
-function createFlower() {
-    
+function createFlower(i) {
+    const main = document.querySelector('main');
+    const flower = document.createElement('img');
+    flower.setAttribute('src', `assets/images/flower.png`);
+    flower.classList.add('flower');
+    flower.id = `flower${i}`;
+
+    const positionX = Math.floor(Math.random() * 100);
+    const positionY = Math.floor(Math.random() * 85);
+    const rotation = Math.floor(Math.random() * 180);
+    flower.style.position = 'absolute';
+    flower.style.transform = `rotate(${rotation}deg)`;
+    flower.style.transform = `scale(25%)`;
+    flower.style.top = `${positionY}%`;
+    flower.style.left = `${positionX}%`;
+
+    main.appendChild(flower);
 }
