@@ -6,6 +6,8 @@
 
 header {
   font-family: myFont;
+  position: relative;
+  z-index: 9999;
 }
 
 header > h1 {
@@ -20,9 +22,17 @@ header > h2 {
   text-align: center;
 }
 
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 footer {
   font-family: myFont;
   color: rgb(255, 50, 50);
+  position: relative;
+  z-index: 9999;
 }
 
 footer > h1 {
